@@ -4,20 +4,18 @@
             <top-menu/>
         </el-header>
         <el-main>
-            <home-page/>
+            <router-view/>
         </el-main>
     </el-container>
 </template>
 
 <script>
 import TopMenu from '../components/TopMenu'
-import HomePage from '../components/HomePage'
 
 export default {
   name: 'Home',
   components: {
-    TopMenu,
-    HomePage
+    TopMenu
   }
 }
 </script>
@@ -29,7 +27,7 @@ export default {
             margin-top: 57px;
             padding: 0;
             width: 100%;
-            height: 867px;
+            height: 810px;
             background: url("../image/background.png") center center no-repeat;
         }
     }

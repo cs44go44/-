@@ -8,19 +8,23 @@ const routes = [
     // 访问路径
     path: '/',
     name: 'home',
-    component: () => import('../views/Home.vue')
-  },
-  {
-    // 访问路径
-    path: '/',
-    name: 'home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/Home.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: () => import('../components/HomePage')
+      },
+      {
+        path: '/register',
+        name: 'register',
+        component: () => import('../components/Register')
+      }
+    ]
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 

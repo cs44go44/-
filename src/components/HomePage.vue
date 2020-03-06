@@ -1,5 +1,6 @@
 <template>
 <div class="main-page">
+    <home-charts/>
     <div>
         <div class="under-page"></div>
         <a href="#"><img class="dt" src="../image/componets_img/大同.png"></a>
@@ -18,17 +19,22 @@
 </template>
 
 <script>
+import HomeCharts from '../charts/HomeCharts'
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  components: {
+    HomeCharts
+  }
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .under-page{
     width: 507px;
     height: 962px;
-    margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 70px;
+    left: 707px;
     background: url("../image/componets_img/山西版图.png") no-repeat center center;
 }
     a img{
