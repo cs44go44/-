@@ -1,5 +1,5 @@
 <template>
-    <el-container>
+    <el-container direction="vertical">
         <el-header height="0.8rem" style="padding: 0;">
             <top-menu/>
         </el-header>
@@ -21,10 +21,10 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="less">
     .el-container {
-        height: 100%;
-        width: 100%;
+        height: 1080px;
+        width: 1920px;
         .el-main{
             margin-top: 57px;
             padding: 0;

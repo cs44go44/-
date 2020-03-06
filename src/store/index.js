@@ -1,23 +1,15 @@
-/**
- * 配置vue-router
- */
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vuex from 'vuex'
 
-// 使用插件, 用use
-Vue.use(VueRouter) // 调用一个这个方法
+Vue.use(Vuex)
 
-// 路由的数组
-const routes = [
-  {
-    // 访问路径
-    path: '/#/',
-    name: 'home',
-    component: () => import('../views/Home.vue')
+export default new Vuex.Store({
+  state: {
+  },
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
   }
-]
-
-const router = new VueRouter({
-  routes
 })
-export default router

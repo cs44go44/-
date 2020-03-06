@@ -3,7 +3,7 @@
       <div class="background-menu">
           <img style="margin-left: 1rem;" src="../image/logo.png">
           <el-menu
-                  :default-active="activeIndex2"
+                  :default-active="1"
                   style="float:right;"
                   mode="horizontal"
                   @select="handleSelect"
@@ -25,7 +25,7 @@ export default {
   methods: {
     jump (jumpName) {
       if (this.$route.name !== jumpName) {
-        this.$router.replace({ name: jumpName })
+        this.$router.push({ name: jumpName })
       }
     },
     handleSelect (key, keyPath) {
