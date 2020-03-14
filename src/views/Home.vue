@@ -24,11 +24,7 @@ export default {
         height: 1080px;
         width: 1920px;
         .el-main{
-            margin-top: 57px;
-            padding: 0;
-            width: 100%;
-            height: 810px;
-            background: url("../image/background.png") center center no-repeat;
+
         }
     }
 </style>

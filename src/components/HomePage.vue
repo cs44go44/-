@@ -29,6 +29,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    .main-page{
+        margin-top: 57px;
+        padding: 0;
+        width: 100%;
+        height: 810px;
+        background: url("../image/background.png") center center no-repeat;
+    }
 .under-page{
     width: 507px;
     height: 962px;

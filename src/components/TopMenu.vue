@@ -39,6 +39,9 @@ export default {
         case '2':
           this.jump('register')
           break
+        case '3':
+          this.jump('login')
+          break
       }
     }
   }
