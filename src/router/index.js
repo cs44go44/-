@@ -23,7 +23,12 @@ const routes = [
       {
         path: '/login',
         name: 'login',
-        component: () => import('../components/login')
+        component: () => import('../components/Login')
+      },
+      {
+        path: '/info',
+        name: 'info',
+        component: () => import('../components/Information')
       }
     ]
   }

@@ -23,8 +23,9 @@ export default {
     .el-container {
         height: 1080px;
         width: 1920px;
-        .el-main{
-
-        }
+    }
+    .el-main{
+        padding: 0;
+        margin: 0;
     }
 </style>

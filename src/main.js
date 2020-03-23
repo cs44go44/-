@@ -6,7 +6,11 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './style/base.less'
 import echarts from 'echarts'
+import Vuex from 'vuex'
+import axios from 'axios'
+Vue.prototype.$axios = axios
 
+Vue.use(Vuex)
 Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
